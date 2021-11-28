@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="top-row">
+        <div class="top-row-left">
+        </div>
+        <div class="top-row-right" id="weather">
+            <button class="button-7">weather</button>
+            <div id="city-weather-box">
+                <div class="weatherIcon">
+                    <img id="weatherIcon" >
+                </div>
+                <div class="weatherText">
+                    <span id="city-weather"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-row">
+        <h2 id="clock" class="clock">00:00:00</h2>
+    </div>
+
+    <div class="third-row">
+        <form id="login-form" class="hidden">
+            <input type="text" required maxlength="15" placeholder="What is your name?" />
+            <input class="button-7" type="submit" value="Log In"/>
+        </form>
+    </div>
+
+    <h1 id="greeting" class="hidden"></h1>
+    <div class="todo">
+        <form id="todo-form">
+            <input name="todo" class="todo-input" type="text" autocomplete="off" required placeholder="Type your todo."/>
+        </form>
+        <div class="todo-item-padding">
+            <ul id="todo-list">
+            </ul>
+        </div>
+    </div>
+    <div id="quote">
+        <div class="quote-quotes">
+            <span></span>
+        </div>
+        <div class="quote-author">
+            <span></span>
+        </div>
+    </div>
+
+
+<!--    <a href="https://nomadcoders.co">Go to courses</a> -->
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.clock {
+    font-size: 1000%;
+    text-align: center;
+    color:white;
+}
+
+.top-row {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.top-row-left {
+    width: 100%;
+}
+.top-row-right {
+    padding:15px;
+    padding-top: 35px;
+    width: 7%;
+    float:right;
+    align-items: center;
+}
+
+.city-weather-box {
+    width: 100%;
+}
+
+.weatherIcon {
+    display:inline-block;
+    text-align: center;
+}
+#weatherIcon {
+    display:inline-block;
+    text-align: center;
+}
+
+.second-row {
+    height: 15%;
+    margin-bottom:50px;
+    padding-bottom:10px;
+}
+
+.third-row {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.todo-input {
+    font-size: 30px;
+    width:50%;
+}
+#greeting {
+    text-align: center;
+    width:100%;
+    color:honeydew;
+}
+
+.todo {
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+    width:100%;
+    color:honeydew;
+}
+
+li {
+    list-style: inside;
+    list-style-type: disc;
+    text-align:start;
+    font-size: 150%;
+}
+.todo-item span {
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: left;
+}
+.todo-item-padding {
+    width: 50%;
+    padding-left: 300px;
+    margin-left:0px;
+}
+
+/* CSS */
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+.city-weather-box {
+    display:grid;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+#quote {
+    position:absolute;
+    width:100%;
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+    color:whitesmoke;
+    display:block;
+}
+.quote-author {
+    font-weight: 250;
+    color:white;
+}
